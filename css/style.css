@@ -31,7 +31,6 @@ header{
 
 .container .nav-logo{
     text-decoration: none;
-    margin-left: 100px;
     font-size: 16px;
     font-weight: 500;
     color: #707070;
@@ -484,12 +483,37 @@ margin-top: 90px;
     color: #707070;
    margin-top: 50px;
   }
-
+  @media (max-width: 480px) {
+.nav-logo{
+   font-size: 20px !important;
+}
+.container ul li{
+   margin-top: 10px !important;
+}
+body{
+   overflow-x: hidden !important;
+}
+  }
 
 @media (max-width: 750px) {
+
+   .layout{
+      align-items: center !important;
+      justify-content: center !important;
+   }
+   .container ul li{
+      margin-top: 10px !important;
+   }
+   body{
+      overflow-x: hidden !important;
+   }
    .container{
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
+   }
+
+   .container ul{
+      flex-direction: column;
    }
    .nav-logo{
       padding-bottom: 20px;
@@ -498,7 +522,7 @@ margin-top: 90px;
    .main-wrapper{
       flex-direction: column;
       width: 80%;
-      margin: 0;
+      margin: auto;
    }
    .left h1{
       font-size: 2rem !important;
